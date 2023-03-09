@@ -1,0 +1,119 @@
+
+
+
+
+* {
+    color: blue (0, 0, 255);
+}
+
+:root{
+    --colorper: rgb(148, 218, 241);
+    --colorfor:  rgb(105, 199, 231);
+    --colortitulo: rgb(25, 184, 237);
+    --colorfondo: rgb(247, 233, 204);
+    --colorboton: rgb(225, 241, 247);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;  /*para ajustar contenido al contenedor*/
+}
+
+
+
+body{
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif; /* chequear si esta cargado este tipo de letra*/
+    background: var(--colorfondo);
+}
+.main-titulo{
+
+    /*border: 1px solid black;*/
+    width: 100%;
+    margin: 87px auto 48px;    
+    
+}
+
+
+.main-container{
+    /*border: 1px solid black;*/
+    width: 100%;
+    margin: 87px auto 48px;
+}
+
+p {
+    color: rgb(62, 9, 142);
+    width: 250px;
+    line-height: 25px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+spam {
+    color:black;
+}
+
+
+button{
+    width: 148px;
+    height: 46px;
+    border-radius: 45px;
+    border-style: none;
+    background-color: var(--colorboton);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif; /* cambio de tipografia */
+    font-size: 30px;
+    background-color: var(--colortitulo);
+    width: 100% auto;
+    text-align: center;    
+}
+
+
+    
+h2 {
+    font-weight: lighter;
+    color: rgb(62, 9, 142);
+    border:rgb(62, 9, 142) 1px solid
+}
+
+
+.estaesmiclase  {
+    color: rgb(62, 9, 142);
+    padding: 5px;
+ }
+
+
+article{
+    width: 100%; 
+    box-sizing: border-box;
+    padding: 48px;
+    float: left;
+ }
+
+ img{
+    margin-bottom: 36px;
+    
+ }
+
+ #datos-personales{
+    background-color: var(--colorper);
+    height: 480px;
+    
+ }
+
+ #formacion{
+    background-color: var(--colorfor);
+    height: auto;
+ }
+
+   
+  @media (min-width: 480px) {
+    #formacion {width: 50%}
+    #datos-personales {width: 50%}
+  }
+  
