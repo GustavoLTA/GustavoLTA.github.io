@@ -27,17 +27,15 @@
 
 </head>
 
-<body>
-
-  <script src="cvfin.js"></script>
+<body>  
 
 
-  <section class="main-titulo">
+  <div class="main-titulo">
     <h1>Curriculum Vitae</h1>
-  </section>
+  </div>
 
 
-  <section class="main-container">
+  <div class="main-container">
     <article id="datos-personales">
       <img src="https://randomuser.me/api/portraits/men/7.jpg"
       alt="imagen de gustavo">
@@ -54,13 +52,33 @@
         <li class="estaesmiclase">Telefono Fijo: 0341-4537788</li>
         <li class="estaesmiclase">Email: ing.ramses-23@gmail.com</li>
       </ul>
-        
-      <button id="botondatospersonales">Cambiar Fondo</button>
+    
+      <div class="contenedor-btn">    
+        <button class="btn-abrir-formulario" id="btn-abrir-formulario">Consulta</button> <!--el id era botondatospersonales-->
+      </div>
       
-    </article>
+<!--  el siguiente bloque es el formulario-->
+      <div class="formu" id="formu">
+        <p>Envíe su consulta se la respondere a la brevedad</p><br>
+        <form action="" id="formulario" class="formulario">   <!--/action_page.php-->
+          <label for="fname">Nombre:</label><br>
+          <input type="text" id="fname" name="fname" value="." maxlength="16"><br><br>
+          <label for="lname">Telefono:</label><br>
+          <input type="text" id="tel" name="tel" value="." maxlength="16"><br><br>
+          <label for="lname">Email:</label><br>
+          <input type="email" id="correo" name="correo" value="." maxlength="16"><br><br>
+          <label for="Textarea1">Consulta:</label><br>
+          <textarea class="form-control" id="Textarea1" rows="3"></textarea><br><br>
+          <input type="submit" value="Enviar"> 
+        </form> 
+
+      </div>
+
+    </article>  
+    
 
     <article id="formacion">
-      <h2>Formacion</h2>
+      <h2>Formación</h2>
         <p>Ingeniero Agrónomo.</p>
         <spam>Universidad Nacional de Rosario, Facultad de Cs. Agrarias, Zavalla.     2012</spam>
           
@@ -101,17 +119,14 @@
         <ul>
           <li class="estaesmiclase">QGIS Integral, Análisis de datos espaciales.(Centro Redes)                               2021</li>
           <li class="estaesmiclase">Actualización en Labanzas               2022</li>
-
-        </ul>
-        
-       <button type="button" id="boton_color">Cambiar color de fondo</button>
-  
+        </ul>    
       
     </article>
 
 
-  </section>
+  </div>
 
+<script src="cvfin.js"></script> 
 
 </body>
 </html>

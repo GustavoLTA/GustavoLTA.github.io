@@ -2,15 +2,13 @@
 
 
 
-document.getElementById('botondatospersonales').addEventListener('click', function() {
-    document.body.style.backgroundColor = 'blue'; 
-    
-});
+const btnabrirformulario = document.querySelector('#btn-abrir-formulario');
+formulario = document.querySelector('#formulario');
 
 
+btnabrirformulario.addEventListener('click', () => {
+    btnabrirformulario.classList.toggle('active');
+    formulario.classList.toggle('active');
 
-document.getElementById('boton_color').addEventListener('click', function() {
-    document.body.style.backgroundColor = '#FF0000'; 
-    
 });
 
